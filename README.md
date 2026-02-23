@@ -3,24 +3,24 @@ Q.1. What is the difference between getElementById, getElementsByClassName, and 
 
 Answer: All those four methords are used basically to select elements from DOM(Document Object Model).
 
-*GetElementById()  -- this dom methord is used to select a single element based on its unique (Id) attribute. for example <p id='title'>Hello</p>...document.GetElementById('title').
+*GetElementById()  -- this dom methord is used to select a single element based on its unique (Id) attribute. for example,  document.GetElementById('title').
 
-*GetElementByClassName() -- this dom methord is used to select all elements that match a specific class name. for exanple <p class='text'>One</p>  ,,, <p class='text'>Two</p>. it returm HTML collection..document.GetElementByClassName('text').
+*GetElementByClassName() -- this dom methord is used to select all elements that match a specific class name. it returm HTML collection. for example,   document.GetElementByClassName('text').
 
-*QuerySelector() -- this dom methord is used for return the first element that matches a css selector.
+*QuerySelector() -- this dom methord is used for return the first element that matches a css selector. like document.QuerySelector()
 
-*QuerySelectorAll() -- this dom methord is used for return the all elements  matching a css selector.
+*QuerySelectorAll() -- this dom methord is used for return the all elements  matching a css selector.like document.QuerySelectorAll()
 
 
 
 Q.2. How do you create and insert a new element into the DOM?
 
-Answer: <h2> food items </h2>
-        <ol id='item'>
-          <li>mango</li>
-          <li>guava</li>
-          <li>banana</li>
-        </ol>
+Answer: h2> food items h2>
+        ol id='item'>
+          li mango li
+          li guava li
+          li banana li
+        ol>
         const items= document.getElementById('item')
         const li = document.createElemt('li')
         li.innertaxt = 'apple'
