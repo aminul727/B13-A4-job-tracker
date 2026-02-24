@@ -15,15 +15,17 @@ Answer: All those four methords are used basically to select elements from DOM(D
 
 Q.2. How do you create and insert a new element into the DOM?
 
-Answer: h2> food items h2>
-        ol id='item'>
+Answer: Suppose i want to add a list item into the list items. there for i have to get the parent section of this list item.for example document.getElementById('item'). then i have to create a list item like as document.createElemt('li'). insert a item into that created list. like as li.innertaxt = 'apple'. and finally i have to appendChind this list into its parent section. items.appendChild(li);
+
+        h2> food items h2>
+        ol id='item'
           li mango li
           li guava li
           li banana li
-        ol>
-        const items= document.getElementById('item')
-        const li = document.createElemt('li')
-        li.innertaxt = 'apple'
+        ol
+        const items= document.getElementById('item'),
+        const li = document.createElemt('li'),
+        li.innertaxt = 'apple',
         items.appendChild(li);
 
 
